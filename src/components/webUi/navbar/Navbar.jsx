@@ -4,16 +4,13 @@ import LOGO from '../../../assets/images/logo.png';
 import MAN from '../../../assets/images/beard-man.png';
 
 function Navbar() {
+
   return (
     <nav>
       <div className="container">
         <a href="#">
           <img src={LOGO} className="logo" alt="Logo photo" />
         </a>
-        <div className="search-bar">
-          <span className="material-symbols-sharp">search</span> 
-          <input id="searchbox" type="search" placeholder="Search for the task" />
-        </div>
         <div className="profile-area">
           <div className="theme-btn">
             <span className="material-symbols-sharp active">light_mode</span>
@@ -23,7 +20,7 @@ function Navbar() {
             <div className="profile-photo">
               <img src={MAN} alt="Person Photo" />
             </div>
-            <h4 id="userName"></h4>
+            <h4 id="userName">Mohamed</h4>
             <span className="material-symbols-sharp">expand_more</span>
           </div>
           <button id="menu-btn">
