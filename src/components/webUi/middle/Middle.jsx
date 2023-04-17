@@ -1,6 +1,6 @@
 import React from "react";
+import  Taskstable  from '../../todos/Taskstable';
 import './middle.css';
-import Taskstable from '../../todos/Taskstable';
 
 function Middle() {
     return (

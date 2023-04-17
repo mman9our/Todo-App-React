@@ -10,7 +10,7 @@
     --color-warning: rgb(234, 181, 7);
     --color-purple: #3bc4a1;
 
-    --color-primary-light: rgba(71, 7, 234, 0.2);
+    --color-primary-light: rgba(18, 169, 126, 0.2);
     --color-success-light: #22ca4b33;
     --color-danger-light: rgba(255, 67, 54, 0.2);
     --color-purple-light: #a063f533;
@@ -163,3 +163,88 @@ small {
     width: 96%;
     margin: 1rem auto 4rem;
 }
+
+
+/*==================== MEDIA QUERIS FOR TABLETS  ==================== */
+@media screen and (max-width: 1400px) {
+
+    .profile-area {
+        gap: 2rem;
+    }
+
+    nav .profile-area button#menu-btn {
+        display: inline;
+        background: transparent;
+        color: var(--color-dark);
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        background: var(--color-white);
+        width: 22rem;
+        height: 100vh;
+        box-shadow: 2rem 0 2rem var(--color-primary-light);
+        display: none;
+    }
+
+    aside button#close-btn {
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 4;
+        background: transparent;
+        color: var(--color-dark);
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
+     aside .sidebar {
+        margin-top: 4rem;
+    }
+
+     aside .updates {
+        display: none;
+    }
+
+     section.right .recent-list {
+        margin-top: 3rem;
+    }
+}
+
+/*==================== MEDIA QUERIS FOR MOBILES PHONES  ==================== */
+@media screen and (max-width: 600px) {
+    nav .profile-area {
+        gap: 2.6rem;
+    }
+
+    nav .profile h5,
+    nav .profile span {
+        display: none;
+    }
+
+    section.middle .empty-image img {
+        width: 20rem;
+    }
+
+    section.right {
+        margin: 0 .1rem;
+    }
+    
+}
+
+
+
+
+

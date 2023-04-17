@@ -5,8 +5,6 @@ import CurrentTasksImage from '../../../assets/images/Current-Tasks.svg';
 import TotalTasksImage from '../../../assets/images/All-Tasks.svg';
 import DeletedTasksImage from '../../../assets/images/Deleted-Task.svg';
 
-
-    
     function QuickLook() {
       const [completedTasks, setCompletedTasks] = useState(0);
       const [currentTasks, setCurrentTasks] = useState(0);

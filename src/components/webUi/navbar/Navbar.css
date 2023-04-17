@@ -88,3 +88,28 @@ nav .profile-area .profile .profile-photo {
 nav .profile-area button {
     display: none;
 }
+
+
+
+
+
+/*  */
+
+
+
+/*==================== MEDIA QUERIS FOR TABLETS  ==================== */
+@media screen and (max-width: 1024px) {
+    nav .search-bar {
+        display: none;
+    }
+
+    nav .profile-area {
+        gap: 2rem;
+    }
+
+    nav .profile-area button#menu-btn {
+        display: inline;
+        background: transparent;
+        color: var(--color-dark);
+    }
+}

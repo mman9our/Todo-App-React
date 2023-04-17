@@ -37,7 +37,7 @@ function Sidebar() {
       <div className="updates">
         <div className="social-link">
           <span className="material-symbols-sharp">update</span>
-          <a href="https://github.com/mman9our" target="_blank" aria-label="Github">
+          <a href="https://github.com/mman9our/Todo-App-React" target="_blank" aria-label="Github">
             <i className='github-img bx bxl-github'></i>
           </a>
         </div>
