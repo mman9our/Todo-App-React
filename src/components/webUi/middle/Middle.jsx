@@ -5,10 +5,8 @@ import './middle.css';
 function Middle() {
     return (
         <div className="middle">
-            <Taskstable />
+            <Taskstable  />
         </div>
-
     );
 }
-
 export default Middle;

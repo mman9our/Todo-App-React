@@ -1,12 +1,15 @@
+// This component represents a single task card in the tasks table
 import React from "react";
 import './taskstable.css';
 
 function TaskCard({ task, onToggleDone }) {
+    // This function toggles the "isDone" state of a task when the "Done" button is clicked
     const handleToggleDone = () => {
         const updatedTask = { ...task, isDone: !task.isDone };
         onToggleDone(updatedTask);
     };
 
+    // The following code represents the UI of a task card
     return (
         <div className={`task${task.isDone ? ' done' : ''}`}>
             <div className="task-info">
@@ -19,6 +22,7 @@ function TaskCard({ task, onToggleDone }) {
                     </span>
                 </button>
 
+                {/* Shows different buttons based on whether the task is done or not */}
                 {task.isDone ? (
                     <button className="circular btn-delete" onClick={handleToggleDone}>
                         <span className="material-symbols-sharp btn-delete-icon">
@@ -28,7 +32,7 @@ function TaskCard({ task, onToggleDone }) {
                 ) : (
                     <button className="circular btn-isDone" onClick={handleToggleDone}>
                         <span className="material-symbols-sharp btn-isDone-icon">
-                        done
+                            done
                         </span>
                     </button>
                 )}
@@ -39,3 +43,6 @@ function TaskCard({ task, onToggleDone }) {
 }
 
 export default TaskCard;
+
+
+
